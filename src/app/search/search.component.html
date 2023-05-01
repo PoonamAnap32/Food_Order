@@ -1,0 +1,10 @@
+<div>
+    <input type="text" placeholder="Search Food"[(ngModel)]="searchItem"
+    (change)="search()"
+    ><!--this is one way DB [value]="searchItem" ,
+    and [(ngModel)="searchItem"] this is two way DB.
+    for this we need forms module bcs [(ngModel)] is in forms module.
+     this (Change) method is use for if we click on directly enter but instead of click search button then also
+    it will change and search item-->
+    <button (click)="search()">Search</button>
+</div>
